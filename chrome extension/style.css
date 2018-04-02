@@ -1,0 +1,33 @@
+.fastreader {
+    padding: 30px;
+    position: relative;
+}
+
+.fastreader::before, .fastreader::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    height: 10px;
+    background-color: black;
+    width: 2px;
+    top: 0;
+}
+
+.fastreader::after {
+    top: auto;
+    bottom: 0;
+}
+
+.fastreader > div {
+    position: absolute;
+}
+
+.highlight {
+    color: red;
+}
+
+text{
+	display: none;
+}

@@ -1,0 +1,30 @@
+{
+	"name" : "spritz",
+	"content_scripts" : [{
+		"js": ["script.js"],
+     	"matches": ["http://*/*", "https://*/*"]
+	}],
+	"description" : "Fast Reading  Extension",
+	"version" : "1.0",
+	
+
+	"manifest_version" : 2,
+
+	"browser_action" : {
+		"default_icon" : "icon.png",
+		"default_popup" : "index.html"
+	},
+
+	"background" : {
+		"scripts" : ["script.js","eventPage.js","background.js","content.js"]
+	},
+
+	
+
+	"permissions" : [
+		"tabs",
+		"activeTab",
+		"storage",
+		"contextMenus"
+	]
+}
